@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page structure */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #388e3c;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main container */
+.farm-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px;
+  background-color: #f1f8e9;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Farm boxes */
+.farm-box {
+  background-color: #a5d6a7;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.farm-box img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.farm-box h3 {
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .farm-box {
+    width: 100%;
+  }
+}
